@@ -1,15 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <title>Blog</title>
 </head>
+
 <body>
+    <header>
+        <nav class=" flex justify-between items-center fontFamily ">
+            <div id="blog-button" class="bg-[#B4F461] rounded">
+                <button class="py-3 px-6 font-semibold ">Home</button>
+            </div>
+            <div class="flex items-center">
+                <img class="border-2 border-dashed" src="./assets/logo.png" alt="">
+                <h2 class="font-semibold ">Donate Bangladesh</h2>
+            </div>
+            <div class="flex items-center ">
+                <img src="./assets/coin.png" alt="">
+                <p><span id="main-amount" class="m-0 p-0">5500</span> BDT</p>
+            </div>
+        </nav>
+    </header>
     <main>
-        <div id="home-button" class="bg-[#B4F461] rounded">
-            <button class="py-3 px-6 font-semibold ">Blog</button>
-        </div>
+
+        <section>
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)_</div>
+                <div class="collapse-content">
+                    <p>DOM is a programming interface or a tree-like structure which represent HTML or XML documents.
+                    </p>
+                </div>
+            </div> 
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?_</div>
+                <div class="collapse-content">
+                    <p>By using class and Id.For example: for id ,use getElemetn by id; for class , use getElementsByClass. And also can use queryselector and queryselectorAll
+
+                    </p>
+                </div>
+            </div>
+
+
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                    <p>
+                        Event delegation is a technique in the DOM where a single event listener is added to a parent element to manage events triggered by its child elements, even if they are added dynamically. It utilizes event bubbling, where events triggered on child elements propagate up to the parent. This approach is useful because it reduces the number of event listeners needed, improves performance, and simplifies code management, especially when dealing with many elements or dynamically added content.
+                    </p>
+                </div>
+            </div>
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                    <p>2/2
+
+                        ChatGPT said:
+                        ChatGPT
+                        You can manipulate an element's attributes and styles using the DOM by accessing the element with methods like getElementById or querySelector. To change an attribute, use the setAttribute method, e.g., element.setAttribute('attributeName', 'value'). For styles, you can modify the style property, such as element.style.backgroundColor = 'red'; to change the background color. These methods allow dynamic updates to both attributes and styles based on user interactions or other conditions.
+                    </p>
+                </div>
+            </div>
+          
+          
+        </section>
     </main>
+
+
 </body>
+
 </html>
