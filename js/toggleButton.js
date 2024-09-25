@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         button2.classList.remove('background')
         const btnOneDisable = document.getElementById('card-section')
         btnOneDisable.classList.remove('hidden')
+      
     
     }) 
     document.getElementById('history-button').addEventListener('click', function () {
@@ -20,6 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
         button1.classList.remove('background')
         const btnOneDisable = document.getElementById('card-section')
         btnOneDisable.classList.add('hidden')
+        const makeHistoryDiasable = document.getElementById('history-section')
+        makeHistoryDiasable.classList.remove('hidden')
     })
 })
 
