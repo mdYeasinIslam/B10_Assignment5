@@ -1,0 +1,12 @@
+*{
+    margin: 8px;
+}
+.fontFamily{
+    font-family: "Lexend", sans-serif;
+}
+.backdrop-blur-custom {
+    backdrop-filter: blur(10px);
+}
+.background{
+    background-color: #B4F461;
+}
