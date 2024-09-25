@@ -10,3 +10,9 @@
 .background{
     background-color: #B4F461;
 }
+.history-style{
+    border: 2px solid gray;
+    padding:20px;
+    margin: 10px;
+    background-color: aqua;
+}
