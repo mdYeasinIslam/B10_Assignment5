@@ -9,7 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
         button2.classList.remove('background')
         const btnOneDisable = document.getElementById('card-section')
         btnOneDisable.classList.remove('hidden')
-      
+
+        const makeHistoryDiasable = document.getElementById('history-section')
+        makeHistoryDiasable.classList.add('hidden')
     
     }) 
     document.getElementById('history-button').addEventListener('click', function () {
